@@ -1,78 +1,78 @@
-// let submit = document.getElementById('btn');
-// let fname = document.getElementById('fname');
-// let lname = document.getElementById('lname');
-// let email = document.getElementById('email');
-// let password = document.getElementById('password');
-// let cnfrmpassword = document.getElementById('confirm_password');
-// let pin = document.getElementById('pin');
-// let phone = document.getElementById('contact_no');
-// let state = document.getElementById('state');
-// let username = document.getElementById('username');
-// let form = document.getElementsByClassName('contact_form')
-// let hobbiesA = document.getElementById('Athelitcs');
-// let hobbiesB = document.getElementById('Basketball');
-// let hobbiesT = document.getElementById('Tabletennies"');
-// let hobbiesF = document.getElementById('Football');
-// let hobbies = document.getElementById('hobbies');
+let submit = document.getElementById('btn');
+let fname = document.getElementById('fname');
+let lname = document.getElementById('lname');
+let email = document.getElementById('email');
+let password = document.getElementById('password');
+let cnfrmpassword = document.getElementById('confirm_password');
+let pin = document.getElementById('pin');
+let phone = document.getElementById('contact_no');
+let state = document.getElementById('state');
+let username = document.getElementById('username');
+let form = document.getElementsByClassName('contact_form')
+let hobbiesA = document.getElementById('Athelitcs');
+let hobbiesB = document.getElementById('Basketball');
+let hobbiesT = document.getElementById('Tabletennies"');
+let hobbiesF = document.getElementById('Football');
+let hobbies = document.getElementById('hobbies');
 
-// let error = document.getElementById('error');
-// let error_lname = document.getElementById('error_lname');
-// let error_mail = document.getElementById('error_mail');
-// let error_password = document.getElementById('error_password');
-// let error_cpassword = document.getElementById('error_cpassword');
-// let error_pin = document.getElementById('error_pin');
-// let error_contact = document.getElementById('error_contact');
-// let error_hobbies = document.getElementById('error_hobbies');
-// console.log(submit)
+let error = document.getElementById('error');
+let error_lname = document.getElementById('error_lname');
+let error_mail = document.getElementById('error_mail');
+let error_password = document.getElementById('error_password');
+let error_cpassword = document.getElementById('error_cpassword');
+let error_pin = document.getElementById('error_pin');
+let error_contact = document.getElementById('error_contact');
+let error_hobbies = document.getElementById('error_hobbies');
+console.log(submit)
 
-// submit.addEventListener('click', (e) => {
-//     if(fname.value==""||lname.value==""||email.value==""||password.value==""||cnfrmpassword.value==""|| pin.value==""||phone.value==""||state.value==""){
-//         e.preventDefault();
-//     }
-//     else{
-//     document.getElementById('success_message').style.display= "block";
-//     }
+submit.addEventListener('click', (e) => {
+    if(fname.value==""||lname.value==""||email.value==""||password.value==""||cnfrmpassword.value==""|| pin.value==""||phone.value==""||state.value==""){
+        e.preventDefault();
+    }
+    else{
+    document.getElementById('success_message').style.display= "block";
+    }
     
-// })
-// submit.addEventListener('click',(e)=>{
-//     if(fname.value==""){
-//         error.style.display = "block";
-//         e.preventDefault();
-//     }
-//     else if(lname.value==""){
-//         error_lname.style.display = "block";
-//         e.preventDefault();
-//     }
-//     else if(password.value==""){
-//         error_password.style.display = "block";
-//         e.preventDefault();
-//     }
-//     else if(cnfrmpassword.value==""){
-//         error_cpassword.style.display = "block";
-//         e.preventDefault();
-//     }
-//     else if(email.value==""){
-//         error_mail.style.display = "block";
-//         e.preventDefault();
-//     }
-//     else if(pin.value==""){
-//         error_pin.style.display = "block";
-//         e.preventDefault();
-//     }
-//     else if(phone.value==""){
-//         error_contact.style.display = "block";
-//         e.preventDefault();
-//     }
-//     else if(count==0){
-//         error_hobbies.style.display = "block";
-//         e.preventDefault();
-//     }
-//     else{
-//         document.getElementById('success_message').style.display= "block";
-//     }
+})
+submit.addEventListener('click',(e)=>{
+    if(fname.value==""){
+        error.style.display = "block";
+        e.preventDefault();
+    }
+    else if(lname.value==""){
+        error_lname.style.display = "block";
+        e.preventDefault();
+    }
+    else if(password.value==""){
+        error_password.style.display = "block";
+        e.preventDefault();
+    }
+    else if(cnfrmpassword.value==""){
+        error_cpassword.style.display = "block";
+        e.preventDefault();
+    }
+    else if(email.value==""){
+        error_mail.style.display = "block";
+        e.preventDefault();
+    }
+    else if(pin.value==""){
+        error_pin.style.display = "block";
+        e.preventDefault();
+    }
+    else if(phone.value==""){
+        error_contact.style.display = "block";
+        e.preventDefault();
+    }
+    else if(count==0){
+        error_hobbies.style.display = "block";
+        e.preventDefault();
+    }
+    else{
+        document.getElementById('success_message').style.display= "block";
+    }
 
     
-// })
+})
 
 fname.addEventListener('blur', (e) => {
     let regEx = /^[a-zA-Z ]*[a-zA-Z]$/;
